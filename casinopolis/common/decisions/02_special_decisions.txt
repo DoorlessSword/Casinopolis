@@ -1,5 +1,5 @@
 #Casino project
-decision_casino_project + {
+decision_casino_project = {
     owned_planets_only = yes
     icon = decision_casino_project
 
@@ -12,6 +12,7 @@ decision_casino_project + {
         }
     }
 
+    #Maybe make it so only normal empires can do it? No machine or hive
     potential = {
         NOR = {
             is_planet_class = pc_casino
@@ -23,6 +24,8 @@ decision_casino_project + {
         exists = owner
         owner = {
             has_ascension_perk = ap_arcology_project
+            is_fallen_empire = no
+            is_regular_empire = yes
         }
     }
 
